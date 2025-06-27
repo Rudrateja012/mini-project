@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowSpace</title>
+  <style>
+    * {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fafaf9;
+  color: rgb(13, 8, 8);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #00000063;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+nav a {
+  color: rgb(15, 9, 9);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 20px;
+  font-size: 30px;
+}
+a{
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+nav a:hover {
+  color: #07ecd2;
+}
+
+.hero {
+    
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #22b09d;
+  color: black;
+  text-decoration: none;
+  border-radius: 40px;
+  transition: background-color 0.4s ease;
+}
+
+.cta:hover {
+  background-color: #c213b9;
+}
+.cta:active {
+  background-color: #e85a0d;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 6px 2px;
+}
+
+.card {
+  background-color: #ffffff1a;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition:  box-shadow 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px #00ffdd99;
+}
+.card:active {
+  box-shadow: 0px 0px 30px #ff000099;}
+
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #0da9e880;
+  margin-top: 48px;
+}
+input:focus {
+  outline: none;
+  border-color: #ff0000;
+}
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  nav a {
+    margin-left: 16px;
+  }
+  .textarea {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  .textarea:focus {
+    border-color: #ff0000;
+  }
+  .foottext {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ff0000;
+  }
+    
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Rudra Project</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="/Day10/Aboutme.html">About Me</a>
+      <a href="/Day10/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>👋 Hello, I'm Rudra!</h1>
+    <p>Delivering success with every line of code</p>
+    <a class="cta" href="#"><h2>Connect Me </h2></a><br><br>
+    
+    
+
+    <a href="https://www.linkedin.com/in/rudra-teja-411187345/"><img src="linkedin.png"></a>
+    <a href="https://github.com/Rudrateja012"><img src="github.png"></a>
+    <a href="https://www.hackerrank.com/profile/rudrateja012"><img src="HackerRank.png"></a>
+    <a href="https://leetcode.com/u/Rudrateja012/"><img src="leetcode.png"></a>
+    
+
+  </section>
+
+  <section class="features">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JAVASCRIPT</div>
+    <div class="card">PYTHON</div>
+    <div class="card">JAVA</div>
+  </section>
+
+  <footer>
+    <p style="color: #ff0000;" class="foottext">We would like to hear from you about your experience and get your valued feedback on how we can make your participation in the governance process better.</p>
+    <input type="text" class="textarea" placeholder="Share your feedback here...">
+    <p>&copy; 2025 Rudra Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
